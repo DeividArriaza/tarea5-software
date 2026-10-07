@@ -1,0 +1,31 @@
+ Container servigt-tarea5-db_tarea5-1 Running 
+ Container servigt-tarea5-db_tarea5-1 Waiting 
+ Container servigt-tarea5-db_tarea5-1 Healthy 
+ Container servigt-tarea5-pruebas-run-c1e3b78e0a85 Creating 
+ Container servigt-tarea5-pruebas-run-c1e3b78e0a85 Created 
+PHPUnit 12.5.34 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.3.32
+Configuration: /app/tests/Tarea5/phpunit.xml
+
+...F..                                                              6 / 6 (100%)
+
+Time: 00:00.416, Memory: 46.50 MB
+
+Tarea5 (Tests\Tarea5\Tarea5)
+ ✔ I1 crear pedido persiste relaciones y devuelve recurso
+ ✔ I2 compra acredita saldo compra e historial
+ ✔ I3 leer notificacion actualiza persistencia y contador
+ ✘ R1 pedido conserva expiracion exacta de siete dias
+   │
+   │ El pedido debe expirar exactamente siete dias despues de su creacion.
+   │ Failed asserting that false is true.
+   │
+   │ /app/tests/Tarea5/Tarea5Test.php:93
+   │
+ ✔ R2 reintento de compra no duplica acreditacion
+ ✔ R3 usuario ajeno no puede leer notificacion
+
+FAILURES!
+Tests: 6, Assertions: 32, Failures: 1.
+

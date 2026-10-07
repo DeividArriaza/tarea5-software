@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="CLI Arguments" tests="20" assertions="67" errors="0" failures="0" skipped="0" time="0.883403">
+    <testsuite name="Tests\Feature\PedidoCreationTest" file="/app/tests/Feature/PedidoCreationTest.php" tests="6" assertions="12" errors="0" failures="0" skipped="0" time="0.339298">
+      <testcase name="test_cliente_autenticado_puede_crear_pedido" file="/app/tests/Feature/PedidoCreationTest.php" line="28" class="Tests\Feature\PedidoCreationTest" classname="Tests.Feature.PedidoCreationTest" assertions="5" time="0.189315"/>
+      <testcase name="test_usuario_no_autenticado_no_puede_crear_pedido" file="/app/tests/Feature/PedidoCreationTest.php" line="50" class="Tests\Feature\PedidoCreationTest" classname="Tests.Feature.PedidoCreationTest" assertions="1" time="0.028454"/>
+      <testcase name="test_descripcion_demasiado_corta_falla_validacion" file="/app/tests/Feature/PedidoCreationTest.php" line="60" class="Tests\Feature\PedidoCreationTest" classname="Tests.Feature.PedidoCreationTest" assertions="2" time="0.028920"/>
+      <testcase name="test_categoria_inexistente_falla_validacion" file="/app/tests/Feature/PedidoCreationTest.php" line="73" class="Tests\Feature\PedidoCreationTest" classname="Tests.Feature.PedidoCreationTest" assertions="1" time="0.028429"/>
+      <testcase name="test_urgencia_invalida_falla_validacion" file="/app/tests/Feature/PedidoCreationTest.php" line="85" class="Tests\Feature\PedidoCreationTest" classname="Tests.Feature.PedidoCreationTest" assertions="1" time="0.029583"/>
+      <testcase name="test_pedido_se_crea_con_expiracion_7_dias" file="/app/tests/Feature/PedidoCreationTest.php" line="97" class="Tests\Feature\PedidoCreationTest" classname="Tests.Feature.PedidoCreationTest" assertions="2" time="0.034598"/>
+    </testsuite>
+    <testsuite name="Tests\Feature\CreditoComprarTest" file="/app/tests/Feature/CreditoComprarTest.php" tests="8" assertions="34" errors="0" failures="0" skipped="0" time="0.363003">
+      <testcase name="test_compra_exitosa_acredita_saldo_y_registra_transaccion" file="/app/tests/Feature/CreditoComprarTest.php" line="24" class="Tests\Feature\CreditoComprarTest" classname="Tests.Feature.CreditoComprarTest" assertions="8" time="0.064527"/>
+      <testcase name="test_repetir_la_misma_idempotency_key_no_duplica_credito" file="/app/tests/Feature/CreditoComprarTest.php" line="53" class="Tests\Feature\CreditoComprarTest" classname="Tests.Feature.CreditoComprarTest" assertions="5" time="0.051424"/>
+      <testcase name="test_paquete_inexistente_o_inactivo_falla" file="/app/tests/Feature/CreditoComprarTest.php" line="81" class="Tests\Feature\CreditoComprarTest" classname="Tests.Feature.CreditoComprarTest" assertions="1" time="0.038239"/>
+      <testcase name="test_cliente_no_puede_comprar_creditos" file="/app/tests/Feature/CreditoComprarTest.php" line="93" class="Tests\Feature\CreditoComprarTest" classname="Tests.Feature.CreditoComprarTest" assertions="1" time="0.029610"/>
+      <testcase name="test_usuario_no_autenticado_recibe_401" file="/app/tests/Feature/CreditoComprarTest.php" line="103" class="Tests\Feature\CreditoComprarTest" classname="Tests.Feature.CreditoComprarTest" assertions="1" time="0.025277"/>
+      <testcase name="test_una_carrera_por_la_misma_clave_devuelve_la_ganadora_sin_duplicar_credito" file="/app/tests/Feature/CreditoComprarTest.php" line="125" class="Tests\Feature\CreditoComprarTest" classname="Tests.Feature.CreditoComprarTest" assertions="6" time="0.051871"/>
+      <testcase name="test_dos_proveedores_pueden_usar_la_misma_idempotency_key" file="/app/tests/Feature/CreditoComprarTest.php" line="185" class="Tests\Feature\CreditoComprarTest" classname="Tests.Feature.CreditoComprarTest" assertions="6" time="0.062117"/>
+      <testcase name="test_los_estados_no_completados_se_persisten_y_no_alteran_el_saldo" file="/app/tests/Feature/CreditoComprarTest.php" line="222" class="Tests\Feature\CreditoComprarTest" classname="Tests.Feature.CreditoComprarTest" assertions="6" time="0.039938"/>
+    </testsuite>
+    <testsuite name="Tests\Feature\NotificacionLecturaTest" file="/app/tests/Feature/NotificacionLecturaTest.php" tests="6" assertions="21" errors="0" failures="0" skipped="0" time="0.181102">
+      <testcase name="test_destinatario_marca_su_notificacion_como_leida" file="/app/tests/Feature/NotificacionLecturaTest.php" line="23" class="Tests\Feature\NotificacionLecturaTest" classname="Tests.Feature.NotificacionLecturaTest" assertions="4" time="0.034050"/>
+      <testcase name="test_otro_usuario_no_puede_marcar_una_notificacion_ajena" file="/app/tests/Feature/NotificacionLecturaTest.php" line="42" class="Tests\Feature\NotificacionLecturaTest" classname="Tests.Feature.NotificacionLecturaTest" assertions="2" time="0.031043"/>
+      <testcase name="test_marcar_leida_requiere_autenticacion" file="/app/tests/Feature/NotificacionLecturaTest.php" line="59" class="Tests\Feature\NotificacionLecturaTest" classname="Tests.Feature.NotificacionLecturaTest" assertions="2" time="0.026924"/>
+      <testcase name="test_marcar_todas_leidas_no_toca_las_de_otro_usuario" file="/app/tests/Feature/NotificacionLecturaTest.php" line="72" class="Tests\Feature\NotificacionLecturaTest" classname="Tests.Feature.NotificacionLecturaTest" assertions="3" time="0.031706"/>
+      <testcase name="test_index_devuelve_datos_como_objeto_con_las_llaves_del_contrato" file="/app/tests/Feature/NotificacionLecturaTest.php" line="92" class="Tests\Feature\NotificacionLecturaTest" classname="Tests.Feature.NotificacionLecturaTest" assertions="7" time="0.026005"/>
+      <testcase name="test_index_solo_devuelve_notificaciones_del_usuario_autenticado" file="/app/tests/Feature/NotificacionLecturaTest.php" line="116" class="Tests\Feature\NotificacionLecturaTest" classname="Tests.Feature.NotificacionLecturaTest" assertions="3" time="0.031374"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,46 @@
+ Network servigt-tarea5_default Creating 
+ Network servigt-tarea5_default Created 
+ Container servigt-tarea5-db_tarea5-1 Creating 
+ Container servigt-tarea5-db_tarea5-1 Created 
+ Container servigt-tarea5-db_tarea5-1 Starting 
+ Container servigt-tarea5-db_tarea5-1 Started 
+ Container servigt-tarea5-db_tarea5-1 Waiting 
+ Container servigt-tarea5-db_tarea5-1 Healthy 
+ Container servigt-tarea5-pruebas-run-4ee825dd26fe Creating 
+ Container servigt-tarea5-pruebas-run-4ee825dd26fe Created 
+PHPUnit 12.5.34 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.3.32
+Configuration: /app/tests/Tarea5/phpunit.xml
+
+....................                                              20 / 20 (100%)
+
+Time: 00:00.887, Memory: 48.50 MB
+
+Credito Comprar (Tests\Feature\CreditoComprar)
+ ✔ Compra exitosa acredita saldo y registra transaccion
+ ✔ Repetir la misma idempotency key no duplica credito
+ ✔ Paquete inexistente o inactivo falla
+ ✔ Cliente no puede comprar creditos
+ ✔ Usuario no autenticado recibe 401
+ ✔ Una carrera por la misma clave devuelve la ganadora sin duplicar credito
+ ✔ Dos proveedores pueden usar la misma idempotency key
+ ✔ Los estados no completados se persisten y no alteran el saldo
+
+Notificacion Lectura (Tests\Feature\NotificacionLectura)
+ ✔ Destinatario marca su notificacion como leida
+ ✔ Otro usuario no puede marcar una notificacion ajena
+ ✔ Marcar leida requiere autenticacion
+ ✔ Marcar todas leidas no toca las de otro usuario
+ ✔ Index devuelve datos como objeto con las llaves del contrato
+ ✔ Index solo devuelve notificaciones del usuario autenticado
+
+Pedido Creation (Tests\Feature\PedidoCreation)
+ ✔ Cliente autenticado puede crear pedido
+ ✔ Usuario no autenticado no puede crear pedido
+ ✔ Descripcion demasiado corta falla validacion
+ ✔ Categoria inexistente falla validacion
+ ✔ Urgencia invalida falla validacion
+ ✔ Pedido se crea con expiracion 7 dias
+
+OK (20 tests, 67 assertions)

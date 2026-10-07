@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/app/tests/Tarea5/phpunit.xml" tests="6" assertions="33" errors="0" failures="0" skipped="0" time="0.432355">
+    <testsuite name="Tarea5" tests="6" assertions="33" errors="0" failures="0" skipped="0" time="0.432355">
+      <testsuite name="Tests\Tarea5\Tarea5Test" file="/app/tests/Tarea5/Tarea5Test.php" tests="6" assertions="33" errors="0" failures="0" skipped="0" time="0.432355">
+        <testcase name="test_I1_crear_pedido_persiste_relaciones_y_devuelve_recurso" file="/app/tests/Tarea5/Tarea5Test.php" line="22" class="Tests\Tarea5\Tarea5Test" classname="Tests.Tarea5.Tarea5Test" assertions="6" time="0.209993"/>
+        <testcase name="test_I2_compra_acredita_saldo_compra_e_historial" file="/app/tests/Tarea5/Tarea5Test.php" line="43" class="Tests\Tarea5\Tarea5Test" classname="Tests.Tarea5.Tarea5Test" assertions="7" time="0.058148"/>
+        <testcase name="test_I3_leer_notificacion_actualiza_persistencia_y_contador" file="/app/tests/Tarea5/Tarea5Test.php" line="69" class="Tests\Tarea5\Tarea5Test" classname="Tests.Tarea5.Tarea5Test" assertions="6" time="0.038908"/>
+        <testcase name="test_R1_pedido_conserva_expiracion_exacta_de_siete_dias" file="/app/tests/Tarea5/Tarea5Test.php" line="81" class="Tests\Tarea5\Tarea5Test" classname="Tests.Tarea5.Tarea5Test" assertions="3" time="0.034925"/>
+        <testcase name="test_R2_reintento_de_compra_no_duplica_acreditacion" file="/app/tests/Tarea5/Tarea5Test.php" line="101" class="Tests\Tarea5\Tarea5Test" classname="Tests.Tarea5.Tarea5Test" assertions="6" time="0.056687"/>
+        <testcase name="test_R3_usuario_ajeno_no_puede_leer_notificacion" file="/app/tests/Tarea5/Tarea5Test.php" line="115" class="Tests\Tarea5\Tarea5Test" classname="Tests.Tarea5.Tarea5Test" assertions="5" time="0.033695"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

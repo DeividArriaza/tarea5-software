@@ -1,0 +1,42 @@
+{
+  "modo": "demo",
+  "estado": "verificado",
+  "etapas": [
+    {
+      "etapa": "01-exitosa",
+      "utc": "2026-10-07T01:55:23.405325+00:00",
+      "exit_code": 0,
+      "segundos": 3.409,
+      "pruebas": 6,
+      "fallos": 0,
+      "errores": 0,
+      "omitidas": 0,
+      "resultado_esperado_verificado": true
+    },
+    {
+      "etapa": "02-regresion",
+      "utc": "2026-10-07T01:55:25.005863+00:00",
+      "exit_code": 1,
+      "segundos": 1.6,
+      "pruebas": 6,
+      "fallos": 1,
+      "errores": 0,
+      "omitidas": 0,
+      "resultado_esperado_verificado": true
+    },
+    {
+      "etapa": "03-corregida",
+      "utc": "2026-10-07T01:55:26.609621+00:00",
+      "exit_code": 0,
+      "segundos": 1.603,
+      "pruebas": 6,
+      "fallos": 0,
+      "errores": 0,
+      "omitidas": 0,
+      "resultado_esperado_verificado": true
+    }
+  ],
+  "commit_ci": null,
+  "controlador_sha256": "c7b8ae0536fa20497627ac1f1b2f92021f5c1dd3dccda48a5aae3ed02b08a389",
+  "controlador_restaurado": true
+}

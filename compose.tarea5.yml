@@ -1,0 +1,37 @@
+services:
+  db_tarea5:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: tarea5_test
+      POSTGRES_USER: tarea5
+      POSTGRES_PASSWORD: exclusivo-entorno-efimero-tarea5
+    tmpfs:
+      - /var/lib/postgresql/data
+    volumes:
+      - ./ServiGT/database/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U tarea5 -d tarea5_test']
+      interval: 2s
+      timeout: 5s
+      retries: 30
+  pruebas:
+    build: ./ServiGT/backend
+    entrypoint: [php, /app/vendor/bin/phpunit]
+    command: [--configuration, /app/tests/Tarea5/phpunit.xml, --testdox]
+    environment:
+      APP_ENV: testing
+      APP_KEY: base64:5vYQ1nT0kZP3sB8xW2eR7uK4mJ6hG9dC1aN5fL0iO8s=
+      APP_DEBUG: 'false'
+      DB_CONNECTION: pgsql
+      DB_HOST: db_tarea5
+      DB_PORT: 5432
+      DB_DATABASE: tarea5_test
+      DB_USERNAME: tarea5
+      DB_PASSWORD: exclusivo-entorno-efimero-tarea5
+    volumes:
+      - ./ServiGT/backend/tests:/app/tests:ro
+      - ./ServiGT/backend/app/Http/Controllers:/app/app/Http/Controllers:ro
+      - ./evidencia/tarea5:/evidencia
+    depends_on:
+      db_tarea5:
+        condition: service_healthy

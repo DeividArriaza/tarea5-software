@@ -1,0 +1,48 @@
+name: Tarea 5 - Integracion y regresion
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main, dev]
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'suite: CI normal; demo: verde-rojo-verde; mutant: job rojo deliberado'
+        required: true
+        default: suite
+        type: choice
+        options: [suite, demo, mutant]
+permissions:
+  contents: read
+concurrency:
+  group: tarea5-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  pruebas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ejecutar pruebas y generar evidencia
+        env:
+          TAREA5_MODE: ${{ inputs.mode || 'suite' }}
+        run: python3 scripts/tarea5.py --mode "$TAREA5_MODE"
+      - name: Resumen de resultados
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          path = Path('evidencia/tarea5/resumen.json')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as f:
+              f.write('## Tarea 5\n\n')
+              f.write('```json\n' + (path.read_text() if path.exists() else 'No se genero resumen: revisar logs.') + '\n```\n')
+          PY
+      - name: Conservar logs y reportes incluso si falla
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tarea5-${{ github.run_id }}-${{ github.run_attempt }}
+          path: evidencia/tarea5/
+          retention-days: 30
+          if-no-files-found: warn

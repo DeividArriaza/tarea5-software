@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="../../vendor/autoload.php" colors="false" cacheResult="false" failOnWarning="true">
+  <testsuites><testsuite name="Tarea5"><directory suffix="Test.php">.</directory></testsuite></testsuites>
+  <php>
+    <env name="APP_ENV" value="testing" force="true"/>
+    <env name="APP_DEBUG" value="false" force="true"/>
+    <env name="DB_CONNECTION" value="pgsql" force="true"/>
+    <env name="DB_HOST" value="db_tarea5" force="true"/>
+    <env name="DB_DATABASE" value="tarea5_test" force="true"/>
+    <env name="DB_URL" value="" force="true"/>
+    <env name="BCRYPT_ROUNDS" value="4"/>
+    <env name="CACHE_STORE" value="array" force="true"/>
+    <env name="SESSION_DRIVER" value="array" force="true"/>
+    <env name="QUEUE_CONNECTION" value="sync" force="true"/>
+    <env name="MAIL_MAILER" value="array" force="true"/>
+  </php>
+</phpunit>

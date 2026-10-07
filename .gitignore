@@ -1,0 +1,19 @@
+# Dependencias y archivos locales
+vendor/
+node_modules/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.phpunit.result.cache
+.DS_Store
+*.zip
+
+# Reportes de nuevas ejecuciones: se conservan como artifacts de CI.
+# La evidencia local de referencia está en docs/evidencia-local/.
+evidencia/tarea5/
+ServiGT/backend/storage/logs/*.log
+ServiGT/backend/storage/framework/cache/data/*
+ServiGT/backend/storage/framework/sessions/*
+ServiGT/backend/storage/framework/views/*

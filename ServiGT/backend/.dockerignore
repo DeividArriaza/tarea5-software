@@ -1,0 +1,8 @@
+# `composer install` corre dentro de la imagen; el vendor del host no se copia.
+vendor
+.env
+storage/logs/*.log
+storage/framework/cache/data/*
+storage/framework/sessions/*
+storage/framework/views/*
+.git
