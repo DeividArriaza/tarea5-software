@@ -1,0 +1,125 @@
+ db_tarea5 Pulling 
+ e2de96513ba9 Already exists 
+ 1b7f9cd581ee Pulling fs layer 
+ 210b280f9556 Pulling fs layer 
+ 81717818649a Pulling fs layer 
+ 3ae6141cfd99 Pulling fs layer 
+ 25b77f59fd95 Pulling fs layer 
+ 6c25da34e03f Pulling fs layer 
+ a88782f92806 Pulling fs layer 
+ d8d21be4bf02 Pulling fs layer 
+ 6117bd39f23f Pulling fs layer 
+ 509688edf37b Pulling fs layer 
+ 3ae6141cfd99 Waiting 
+ 25b77f59fd95 Waiting 
+ 6c25da34e03f Waiting 
+ a88782f92806 Waiting 
+ d8d21be4bf02 Waiting 
+ 6117bd39f23f Waiting 
+ 509688edf37b Waiting 
+ 1b7f9cd581ee Downloading [==================================================>]     969B/969B
+ 1b7f9cd581ee Download complete 
+ 81717818649a Downloading [==================================================>]     172B/172B
+ 81717818649a Verifying Checksum 
+ 81717818649a Download complete 
+ 1b7f9cd581ee Extracting [==================================================>]     969B/969B
+ 1b7f9cd581ee Extracting [==================================================>]     969B/969B
+ 210b280f9556 Downloading [>                                                  ]  15.79kB/901.4kB
+ 1b7f9cd581ee Pull complete 
+ 210b280f9556 Verifying Checksum 
+ 210b280f9556 Download complete 
+ 210b280f9556 Extracting [=>                                                 ]  32.77kB/901.4kB
+ 210b280f9556 Extracting [==================================================>]  901.4kB/901.4kB
+ 210b280f9556 Extracting [==================================================>]  901.4kB/901.4kB
+ 210b280f9556 Pull complete 
+ 81717818649a Extracting [==================================================>]     172B/172B
+ 81717818649a Extracting [==================================================>]     172B/172B
+ 81717818649a Pull complete 
+ 3ae6141cfd99 Downloading [==================================================>]     116B/116B
+ 3ae6141cfd99 Verifying Checksum 
+ 3ae6141cfd99 Download complete 
+ 3ae6141cfd99 Extracting [==================================================>]     116B/116B
+ 3ae6141cfd99 Extracting [==================================================>]     116B/116B
+ 3ae6141cfd99 Pull complete 
+ 25b77f59fd95 Downloading [>                                                  ]  537.5kB/111.3MB
+ 6c25da34e03f Downloading [==================================================>]  9.669kB/9.669kB
+ 6c25da34e03f Verifying Checksum 
+ 6c25da34e03f Download complete 
+ 25b77f59fd95 Downloading [==========>                                        ]  22.35MB/111.3MB
+ a88782f92806 Downloading [==================================================>]     128B/128B
+ a88782f92806 Verifying Checksum 
+ a88782f92806 Download complete 
+ 25b77f59fd95 Downloading [==========================>                        ]  58.41MB/111.3MB
+ d8d21be4bf02 Downloading [==================================================>]     169B/169B
+ d8d21be4bf02 Verifying Checksum 
+ d8d21be4bf02 Download complete 
+ 25b77f59fd95 Downloading [=========================================>         ]  93.42MB/111.3MB
+ 25b77f59fd95 Verifying Checksum 
+ 25b77f59fd95 Download complete 
+ 25b77f59fd95 Extracting [>                                                  ]  557.1kB/111.3MB
+ 6117bd39f23f Downloading [============================>                      ]  3.501kB/6.111kB
+ 6117bd39f23f Downloading [==================================================>]  6.111kB/6.111kB
+ 6117bd39f23f Verifying Checksum 
+ 6117bd39f23f Download complete 
+ 509688edf37b Downloading [==================================================>]     185B/185B
+ 509688edf37b Verifying Checksum 
+ 509688edf37b Download complete 
+ 25b77f59fd95 Extracting [==>                                                ]  5.571MB/111.3MB
+ 25b77f59fd95 Extracting [======>                                            ]  15.04MB/111.3MB
+ 25b77f59fd95 Extracting [===========>                                       ]  24.51MB/111.3MB
+ 25b77f59fd95 Extracting [===============>                                   ]  33.42MB/111.3MB
+ 25b77f59fd95 Extracting [===================>                               ]  42.34MB/111.3MB
+ 25b77f59fd95 Extracting [=======================>                           ]  51.25MB/111.3MB
+ 25b77f59fd95 Extracting [=========================>                         ]  56.82MB/111.3MB
+ 25b77f59fd95 Extracting [============================>                      ]  62.95MB/111.3MB
+ 25b77f59fd95 Extracting [================================>                  ]  71.86MB/111.3MB
+ 25b77f59fd95 Extracting [====================================>              ]  80.77MB/111.3MB
+ 25b77f59fd95 Extracting [====================================>              ]  81.33MB/111.3MB
+ 25b77f59fd95 Extracting [=====================================>             ]  82.44MB/111.3MB
+ 25b77f59fd95 Extracting [======================================>            ]  85.23MB/111.3MB
+ 25b77f59fd95 Extracting [========================================>          ]  89.13MB/111.3MB
+ 25b77f59fd95 Extracting [==========================================>        ]  93.59MB/111.3MB
+ 25b77f59fd95 Extracting [============================================>      ]  98.04MB/111.3MB
+ 25b77f59fd95 Extracting [================================================>  ]  108.6MB/111.3MB
+ 25b77f59fd95 Extracting [==================================================>]  111.3MB/111.3MB
+ 25b77f59fd95 Pull complete 
+ 6c25da34e03f Extracting [==================================================>]  9.669kB/9.669kB
+ 6c25da34e03f Extracting [==================================================>]  9.669kB/9.669kB
+ 6c25da34e03f Pull complete 
+ a88782f92806 Extracting [==================================================>]     128B/128B
+ a88782f92806 Extracting [==================================================>]     128B/128B
+ a88782f92806 Pull complete 
+ d8d21be4bf02 Extracting [==================================================>]     169B/169B
+ d8d21be4bf02 Extracting [==================================================>]     169B/169B
+ d8d21be4bf02 Pull complete 
+ 6117bd39f23f Extracting [==================================================>]  6.111kB/6.111kB
+ 6117bd39f23f Extracting [==================================================>]  6.111kB/6.111kB
+ 6117bd39f23f Pull complete 
+ 509688edf37b Extracting [==================================================>]     185B/185B
+ 509688edf37b Extracting [==================================================>]     185B/185B
+ 509688edf37b Pull complete 
+ db_tarea5 Pulled 
+ Network servigt-tarea5_default  Creating
+ Network servigt-tarea5_default  Created
+ Container servigt-tarea5-db_tarea5-1  Creating
+ Container servigt-tarea5-db_tarea5-1  Created
+ Container servigt-tarea5-db_tarea5-1  Starting
+ Container servigt-tarea5-db_tarea5-1  Started
+PHPUnit 12.5.34 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.3.35
+Configuration: /app/tests/Tarea5/phpunit.xml
+
+......                                                              6 / 6 (100%)
+
+Time: 00:00.337, Memory: 46.50 MB
+
+Tarea5 (Tests\Tarea5\Tarea5)
+ ✔ I1 crear pedido persiste relaciones y devuelve recurso
+ ✔ I2 compra acredita saldo compra e historial
+ ✔ I3 leer notificacion actualiza persistencia y contador
+ ✔ R1 pedido conserva expiracion exacta de siete dias
+ ✔ R2 reintento de compra no duplica acreditacion
+ ✔ R3 usuario ajeno no puede leer notificacion
+
+OK (6 tests, 33 assertions)

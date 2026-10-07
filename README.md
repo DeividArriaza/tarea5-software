@@ -8,14 +8,18 @@ sobre funcionalidades reales de ServiGT y su proceso de integración continua.
 ## Entregables
 
 - [Informe PDF](entregables/Informe-Tarea-5.pdf): investigación, comparación de herramientas, diseño de pruebas, resultados y conclusiones.
-- [Video sin voz](entregables/Video-Tarea-5-sin-voz.mp4): aproximadamente 7 minutos y 35 segundos, con resultados locales reales.
+- [Video sin voz](entregables/Video-Tarea-5-sin-voz.mp4): aproximadamente 7 minutos y 35 segundos, con resultados locales y de GitHub Actions.
 - [Pruebas implementadas](ServiGT/backend/tests/Tarea5/Tarea5Test.php).
 - [Workflow de GitHub Actions](.github/workflows/tarea5.yml).
 - [Evidencia local](docs/evidencia-local/): logs, JUnit XML y TestDox HTML.
 
-El informe todavía requiere completar nombres y carnés. El video presenta
-la evidencia local; la demostración de la ejecución remota de Actions debe
-complementarse antes de entregar como evidencia completa de CI.
+El informe todavía requiere completar nombres y carnés. El video sin voz muestra
+resultados reales de GitHub Actions: ejecución exitosa, detección de la regresión
+y aprobación después de corregirla.
+
+- [Suite automática aprobada](https://github.com/DeividArriaza/tarea5-software/actions/runs/37561473072).
+- [Demostración remota aprobada](https://github.com/DeividArriaza/tarea5-software/actions/runs/37561479579).
+- [Reportes y resultados de CI](docs/evidencia-ci/).
 
 ## Casos de prueba
 

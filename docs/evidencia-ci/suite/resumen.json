@@ -1,0 +1,20 @@
+{
+  "modo": "suite",
+  "estado": "verificado",
+  "etapas": [
+    {
+      "etapa": "01-exitosa",
+      "utc": "2026-10-07T02:21:02.719192+00:00",
+      "exit_code": 0,
+      "segundos": 8.557,
+      "pruebas": 6,
+      "fallos": 0,
+      "errores": 0,
+      "omitidas": 0,
+      "resultado_esperado_verificado": true
+    }
+  ],
+  "commit_ci": "aced080c5aa038d4e2861398a5da6ac05dd93a74",
+  "controlador_sha256": "c7b8ae0536fa20497627ac1f1b2f92021f5c1dd3dccda48a5aae3ed02b08a389",
+  "controlador_restaurado": true
+}
